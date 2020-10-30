@@ -74,6 +74,8 @@ function createNewAsset() {
   let manufacturer = namer;
   let owner = namer + '(Manufacturer)';
   let quantity = $("#quantity").val();
+  let batchNo2 = $('input[name="batchNo"]').val();
+  let batchNo3 = $('input[name="batchNo"]').val();
 
 
   let status = document.getElementById("status").innerText;

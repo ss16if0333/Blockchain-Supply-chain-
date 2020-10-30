@@ -84,6 +84,72 @@
   <center><input 
     type="button" 
     class="btn btn-primary" onclick="printDiv('printableArea')" value="Print invoice!" /></center>
+
+    <nav class="navbar navbar-light bg-light">
+      <a href="./home.html"><button
+        type="button"
+        class="btn btn-primary">
+        DashBoard
+      </button></a>
+      <span class="navbar-brand mb-0 h1">MedicChain</span>
+    </nav>
+
+    <div class="container">
+      <h1 class="display-4"></h1>
+      <div id="loading-div">
+        <div class="inner-div">
+          <div id="count">
+            <h2 class="display-4" style="color: #218f76;">Search Drug / Vaccine</h2>
+          </div>
+        </div>
+        <div class="inner-div">
+          <img src="./images/loading.gif" alt="loading" id="loading" />
+        </div>
+      </div>
+      <!-- form -->
+      <div class="row">
+        <div class="col">
+          <input
+            type="number"
+            name="id"
+            class="form-control"
+            placeholder="Id of the drug"
+          />
+        </div>
+        <div class="col">
+          <button class="btn btn-primary" onclick="searchAsset()">
+            Search
+          </button>
+        </div>
+      </div>
+      <div id="printableArea">
+  
+  
+  
+  
+      <div class="row">
+        <div class="col">
+        <div class="lead" id="searchResult">
+          
+        </div>  
+        <div class="lead">
+          <div id="qrResult" style="height: 100px;width: 100px"></div>
+        </div>
+      </div>
+        
+        <div class="col">
+        <div id="statusHistory" style="display: none">
+            <br>
+          <h4 class="display-4" style="color: #218f76;">Status History</h4></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <br>
+  <center><input 
+    type="button" 
+    class="btn btn-primary" onclick="printDiv('printableArea')" value="Print invoice!" /></center>
   <script>
     function printDiv(divName) {
          var printContents = document.getElementById(divName).innerHTML;

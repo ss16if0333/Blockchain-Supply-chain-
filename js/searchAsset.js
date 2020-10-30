@@ -12,7 +12,7 @@ function searchAsset() {
         document.getElementById('qrResult').innerHTML = "";
         var qrcode = new QRCode(document.getElementById('qrResult'), {
           width: 100,
-          height: 100
+          height: 200
         });
         // asset is found
         $("#statusHistory").html("<br>" + "<h4>" + "Status History" + "</h4>" + "</div>");
